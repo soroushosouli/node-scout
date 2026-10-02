@@ -1,29 +1,37 @@
 const LANGUAGES = {
+    // JavaScript / TypeScript
     ".js": "JavaScript",
     ".jsx": "JavaScript",
     ".mjs": "JavaScript",
     ".cjs": "JavaScript",
-
     ".ts": "TypeScript",
     ".tsx": "TypeScript",
 
+    // Python
     ".py": "Python",
-    ".java": "Java",
+
+    // C / C++
     ".c": "C",
     ".h": "C/C++ Header",
     ".cpp": "C++",
     ".cc": "C++",
     ".cxx": "C++",
+    ".hpp": "C++ Header",
 
+    // JVM
+    ".java": "Java",
+    ".kt": "Kotlin",
+    ".kts": "Kotlin",
+    ".scala": "Scala",
+
+    // Other compiled languages
     ".cs": "C#",
     ".go": "Go",
     ".rs": "Rust",
-    ".php": "PHP",
-    ".rb": "Ruby",
     ".swift": "Swift",
-    ".kt": "Kotlin",
-    ".kts": "Kotlin",
+    ".dart": "Dart",
 
+    // Web
     ".html": "HTML",
     ".htm": "HTML",
     ".css": "CSS",
@@ -31,21 +39,38 @@ const LANGUAGES = {
     ".sass": "Sass",
     ".less": "Less",
 
+    // Backend / scripting
+    ".php": "PHP",
+    ".rb": "Ruby",
+    ".lua": "Lua",
+    ".pl": "Perl",
+    ".r": "R",
+
+    // Shell
+    ".sh": "Shell",
+    ".bash": "Bash",
+    ".zsh": "Zsh",
+    ".fish": "Fish",
+    ".ps1": "PowerShell",
+    ".bat": "Batch",
+    ".cmd": "Batch",
+
+    // Data / config
     ".json": "JSON",
     ".xml": "XML",
     ".yaml": "YAML",
     ".yml": "YAML",
     ".toml": "TOML",
+    ".ini": "INI",
 
-    ".sh": "Shell",
-    ".bash": "Bash",
-    ".zsh": "Zsh",
-    ".ps1": "PowerShell",
-
+    // Database
     ".sql": "SQL",
 
+    // Other
     ".md": "Markdown",
-    ".txt": "Plain Text"
+    ".tex": "LaTeX",
+    ".vue": "Vue",
+    ".svelte": "Svelte"
 };
 
 export function detect(extension) {
