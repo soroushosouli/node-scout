@@ -1,0 +1,19 @@
+{
+  "name": "node-scout",
+  "version": "1.0.0",
+  "description": "A fast CLI for exploring and analyzing systems, files, and projects.",
+  "type": "module",
+  "bin": {
+    "scout": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "cli",
+    "developer-tool",
+    "node",
+    "javascript"
+  ],
+  "license": "MIT"
+}
