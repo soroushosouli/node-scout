@@ -3,4 +3,5 @@ export const IGNORE = [
     ".gitignore",
     "node_modules",
     ".git",
+    "LICENSE",
 ];
