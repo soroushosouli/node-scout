@@ -21,6 +21,13 @@ You may need to open files, check folders, count files, check sizes, and run dif
 
 **Scout puts this information in one place.**
 
+## Sample
+
+<img src="sample/system.png" width="750">
+<img src="sample/file.png" width="750">
+<img src="sample/folder.png" width="750">
+<img src="sample/project.png" width="750">
+
 ### 📄 Files
 
 Check any file and see:
