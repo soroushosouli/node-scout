@@ -1,19 +1,23 @@
 import { color } from "../utils/color.js";
 
 export const help = [
-    "==== SCOUT HELP ====",
+    `${color.bold}${color.cyan}SCOUT${color.reset} ${color.dim}Project inspection CLI${color.reset}`,
     "",
-    `${color.yellow}Commands${color.reset}`,
-    "  scout system             Show system information",
-    "  scout help               Show this help message",
-    "  scout version             Show scout version",
+
+    `${color.yellow}COMMANDS${color.reset}`,
+    `  ${color.green}system${color.reset}     Show system information`,
+    `  ${color.green}help${color.reset}       Show this help message`,
+    `  ${color.green}version${color.reset}    Show Scout version`,
     "",
-    `${color.yellow}Targets${color.reset}`,
-    "  scout file ./file.ts      Analyze a file",
-    "  scout folder ./src        Analyze a folder",
-    "  scout project ./project   Analyze a project",
+
+    `${color.yellow}TARGETS${color.reset}`,
+    `  ${color.cyan}file${color.reset}       Analyze a file`,
+    `  ${color.cyan}folder${color.reset}     Analyze a folder`,
+    `  ${color.cyan}project${color.reset}    Analyze a project`,
     "",
-    `${color.yellow}Options${color.reset}`,
-    "  scout -v            Show Scout version",
-    "  scout -h            Show this help message"
+
+    `${color.yellow}OPTIONS${color.reset}`,
+    `  ${color.magenta}-v${color.reset}          Show Scout version`,
+    `  ${color.magenta}-h${color.reset}          Show this help message`,
+    "",
 ];

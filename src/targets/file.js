@@ -47,24 +47,28 @@ export async function scanFile(p) {
         }
 
         const fileInfo = [
-            "==== FILE INFO ====",
+            `${color.bold}${color.cyan}SCOUT${color.reset}  ${color.dim}File information${color.reset}`,
+            "",
 
-            `${color.yellow}-- Basic --${color.reset}`,
-            `Name:        ${path.basename(p)}`,
-            `Full path:   ${path.resolve(p)}`,
-            `Type:        File`,
-            `Extension:   ${extname}`,
-            `Language:    ${detect(extname)}`,
-            `Size:        ${(stats.size / 1024).toFixed(1)} KB`,
+            `${color.yellow}── BASIC ──${color.reset}`,
+            `  Name        ${path.basename(p)}`,
+            `  Full path   ${path.resolve(p)}`,
+            `  Type        File`,
+            `  Extension   ${extname}`,
+            `  Language    ${detect(extname)}`,
+            `  Size        ${(stats.size / 1024).toFixed(1)} KB`,
+            "",
 
-            `${color.green}-- Content --${color.reset}`,
-            `Lines:       ${lines}`,
-            `Characters:  ${characters}`,
-            `Words:       ${words}`,
+            `${color.green}── CONTENT ──${color.reset}`,
+            `  Lines       ${lines}`,
+            `  Characters  ${characters}`,
+            `  Words       ${words}`,
+            "",
 
-            `${color.cyan}-- Other --${color.reset}`,
-            `Created:     ${daysAgo} days ago`,
-            `Code overview: ${overview}`,
+            `${color.cyan}── OTHER ──${color.reset}`,
+            `  Created     ${daysAgo} days ago`,
+            `  Overview    ${overview}`,
+            "",
         ];
 
         scout(fileInfo);

@@ -88,25 +88,33 @@ export async function scanFolder(p) {
         );
 
         const folderInfo = [
-            "==== FOLDER INFO ====",
+            `${color.bold}${color.cyan}SCOUT${color.reset}  ${color.dim}Folder information${color.reset}`,
+            "",
 
-            `${color.yellow}-- Basic --${color.reset}`,
-            `Name:        ${path.basename(absolutePath)}`,
-            `Path:        ${absolutePath}`,
-            `Type:        Folder`,
+            `${color.yellow}── BASIC ──${color.reset}`,
+            `  Name        ${path.basename(absolutePath)}`,
+            `  Path        ${absolutePath}`,
+            `  Type        Folder`,
+            "",
 
-            `${color.green}-- Contents --${color.reset}`,
-            `Files:       ${files}`,
-            `Folders:     ${folders}`,
-            `Total Items: ${totalItems}`,
+            `${color.green}── CONTENTS ──${color.reset}`,
+            `  Files       ${files}`,
+            `  Folders     ${folders}`,
+            `  Total Items ${totalItems}`,
+            "",
 
-            `${color.cyan}-- File Types --${color.reset}`,
-            ...(fileTypes.length ? fileTypes : ["No files"]),
+            `${color.cyan}── FILE TYPES ──${color.reset}`,
+            ...(fileTypes.length
+                ? fileTypes.map(type => `  ${type}`)
+                : [`  ${color.dim}No files${color.reset}`]
+            ),
+            "",
 
-            `${color.magenta}-- Other --${color.reset}`,
-            `Created:     ${daysAgo} days ago`,
-            `Total Size:  ${(totalSize / 1024).toFixed(1)} KB`,
-            `Code Overview: ${overview}`,
+            `${color.magenta}── OTHER ──${color.reset}`,
+            `  Created     ${daysAgo} days ago`,
+            `  Total Size  ${(totalSize / 1024).toFixed(1)} KB`,
+            `  Overview    ${overview}`,
+            "",
         ];
 
         scout(folderInfo);

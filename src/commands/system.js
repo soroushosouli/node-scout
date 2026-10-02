@@ -13,21 +13,26 @@ const { stdout } = await execAsync("npm --version");
 const npm = stdout.trim();
 
 export const system = [
-    "==== SYSTEM INFO ====",
+    `${color.bold}${color.cyan}SCOUT${color.reset}  ${color.dim}System information${color.reset}`,
+    "",
 
-    `${color.yellow}-- Machine --${color.reset}`,
-    `OS:          ${getPlatform()}`,
-    `Hostname:    ${os.hostname()}`,
-    `User:        ${os.userInfo().username}`,
+    `${color.yellow}── MACHINE ──${color.reset}`,
+    `  OS          ${getPlatform()}`,
+    `  Hostname    ${os.hostname()}`,
+    `  User        ${os.userInfo().username}`,
+    "",
 
-    `${color.green}-- Hardware --${color.reset}`,
-    `CPU Model:   ${os.cpus()[0].model}`,
-    `CPU Cores:   ${os.cpus().length}`,
-    `Total RAM:   ${gb(os.totalmem())} GB`,
-    `Free RAM:    ${gb(os.freemem())} GB`,
+    `${color.green}── HARDWARE ──${color.reset}`,
+    `  CPU Model   ${os.cpus()[0].model}`,
+    `  CPU Cores   ${os.cpus().length}`,
+    `  Total RAM   ${gb(os.totalmem())} GB`,
+    `  Free RAM    ${gb(os.freemem())} GB`,
+    "",
 
-    `${color.cyan}-- Runtime --${color.reset}`,
-    `Node:        ${process.version}`,
-    `npm:         ${npm}`,
-    `CWD:         ${process.cwd()}`
+    `${color.cyan}── RUNTIME ──${color.reset}`,
+    `  Node        ${process.version}`,
+    `  npm         ${npm}`,
+    `  CWD         ${process.cwd()}`,
+    "",
+    
 ];
