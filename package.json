@@ -1,6 +1,6 @@
 {
   "name": "node-scout",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A fast CLI for exploring and analyzing systems, files, and projects.",
   "type": "module",
   "bin": {
