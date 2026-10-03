@@ -11,8 +11,16 @@
   },
   "keywords": [
     "cli",
-    "developer-tool",
-    "node",
+    "nodejs",
+    "developer-tools",
+    "file-analysis",
+    "project-analyzer",
+    "codebase",
+    "file-stats",
+    "directory-tree",
+    "command-line",
+    "static-analysis",
+    "npm",
     "javascript"
   ],
   "license": "MIT"
