@@ -4,7 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/node-scout.svg)](https://www.npmjs.com/package/node-scout)
 [![npm downloads](https://img.shields.io/npm/dm/node-scout.svg)](https://www.npmjs.com/package/node-scout)
-[![license](https://img.shields.io/github/license/YOUR_USERNAME/node-scout.svg)](https://github.com/YOUR_USERNAME/node-scout/blob/main/LICENSE)
+[![license](https://img.shields.io/github/license/soroushosouli/node-scout.svg)](https://github.com/soroushosouli/node-scout/blob/main/LICENSE)
 [![node](https://img.shields.io/node/v/node-scout.svg)](https://nodejs.org/)
 
 Node Scout helps you inspect any codebase in seconds. Run one command and get file stats, folder structure, project languages, total size, and system information — without opening multiple tools.
@@ -45,7 +45,6 @@ Analyze any file and see:
 - File type & language
 - File size
 - Lines, words & characters
-- Read / write access
 - Creation date
 - More useful details
 
@@ -57,7 +56,6 @@ Analyze any folder and see:
 - Folder count
 - Total size
 - Contents
-- Folder structure
 - More useful details
 
 ### 🗂️ Projects
