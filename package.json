@@ -1,6 +1,9 @@
 {
   "name": "node-scout",
   "version": "1.2.1",
+  "engines": {
+    "node": ">=16"
+  },
   "description": "A fast CLI for exploring and analyzing systems, files, and projects.",
   "type": "module",
   "bin": {
