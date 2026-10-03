@@ -1,140 +1,82 @@
-
 # 🔎 Node Scout
 
-### A fast CLI tool for checking files, folders, and projects.
+> A fast Node.js CLI tool to analyze files, folders, and projects from your terminal.
 
-Want to know what's inside a project?
+[![npm version](https://img.shields.io/npm/v/node-scout.svg)](https://www.npmjs.com/package/node-scout)
+[![npm downloads](https://img.shields.io/npm/dm/node-scout.svg)](https://www.npmjs.com/package/node-scout)
+[![license](https://img.shields.io/github/license/YOUR_USERNAME/node-scout.svg)](https://github.com/YOUR_USERNAME/node-scout/blob/main/LICENSE)
+[![node](https://img.shields.io/node/v/node-scout.svg)](https://nodejs.org/)
 
-**Just run Scout.**
+Node Scout helps you inspect any codebase in seconds. Run one command and get file stats, folder structure, project languages, total size, and system information — without opening multiple tools.
 
-    scout project ./my-project
+## Table of Contents
 
-Scout scans it and gives you **useful information in seconds.**
-
----
+- [Why Node Scout?](#why-node-scout)
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Why It's Fast](#why-its-fast)
+- [Project Structure](#project-structure)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Why Node Scout?
 
-Checking a project by hand takes time.
+Checking a project manually takes time. You open files, check folders, count files, check sizes, and run different commands.
 
-You may need to open files, check folders, count files, check sizes, and run different commands.
+**Node Scout puts this information in one place.**
 
-**Scout puts this information in one place.**
+## Demo
 
-## Sample
+![Node Scout system information output](sample/system.png)
+![Node Scout file analysis output](sample/file.png)
+![Node Scout folder analysis output](sample/folder.png)
+![Node Scout project analysis output](sample/project.png)
 
-<img src="sample/system.png" width="750">
-<img src="sample/file.png" width="750">
-<img src="sample/folder.png" width="750">
-<img src="sample/project.png" width="750">
+## Features
 
 ### 📄 Files
 
-Check any file and see:
+Analyze any file and see:
 
-- **File type & language**
-- **File size**
-- **Lines, words & characters**
-- **Read / write access**
-- **Creation date**
-- **More useful details**
+- File type & language
+- File size
+- Lines, words & characters
+- Read / write access
+- Creation date
+- More useful details
 
 ### 📁 Folders
 
-Check any folder and see:
+Analyze any folder and see:
 
-- **File count**
-- **Folder count**
-- **Total size**
-- **Contents**
-- **Folder structure**
-- **More useful details**
+- File count
+- Folder count
+- Total size
+- Contents
+- Folder structure
+- More useful details
 
 ### 🗂️ Projects
 
-Check a whole project and see:
+Analyze a whole project and see:
 
-- **Project structure**
-- **Languages used**
-- **File statistics**
-- **Total size**
-- **More useful details**
+- Project structure
+- Languages used
+- File statistics
+- Total size
+- More useful details
 
 ### 💻 System
 
-Scout can also show **useful information about your system.**
+Node Scout can also show useful information about your system.
 
----
+## Installation
 
-## 🚀 Easy to Use
+Requires Node.js 16+.
 
-### Install
-
-    npm install -g node-scout
-
-Done.
-
-Now `scout` works anywhere in your terminal.
-
-### Run
-
-    scout <target> <path>
-
-Example:
-
-    scout folder ./src
-
-Or check one file:
-
-    scout file package.json
-
-**One command. Useful information.**
-
----
-
-## ⚡ Fast
-
-Scout is made to be fast.
-
-It uses **`async/await`** and **Node.js asynchronous core modules**.
-
-This lets Scout scan large projects **very quickly.**
-
-**Give it a path. Scout does the rest.**
-
----
-
-## 🧩 Simple Code
-
-Scout is built with a **modular structure**.
-
-Each part has one job.
-
-This makes the project:
-
-- **Easy to understand**
-- **Easy to maintain**
-- **Easy to improve**
-- **Fast and lightweight**
-
----
-
-## 🚧 Under Development
-
-Node Scout is still growing.
-
-More features and improvements are coming.
-
-Found a bug?
-
-Have an idea?
-
-**Feel free to contribute.**
-
----
-
-## ⭐ Like Node Scout?
-
-If you find it useful, **give it a star.**
-
-**Node Scout — check your projects faster.**
+```bash
+npm install -g node-scout
