@@ -7,74 +7,94 @@
 [![license](https://img.shields.io/github/license/soroushosouli/node-scout.svg)](https://github.com/soroushosouli/node-scout/blob/main/LICENSE)
 [![node](https://img.shields.io/node/v/node-scout.svg)](https://nodejs.org/)
 
-Node Scout helps you inspect any codebase in seconds. Run one command and get file stats, folder structure, project languages, total size, and system information — without opening multiple tools.
+Node Scout helps you inspect any codebase in seconds. One command gives you file stats, folder structure, project languages, total size, and system info.
 
-## Table of Contents
+## Contents
 
-- [Why Node Scout?](#why-node-scout)
 - [Demo](#demo)
 - [Features](#features)
-- [Installation](#installation)
+- [Install](#install)
 - [Usage](#usage)
 - [Examples](#examples)
-- [Why It's Fast](#why-its-fast)
-- [Project Structure](#project-structure)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Why Node Scout?
-
-Checking a project manually takes time. You open files, check folders, count files, check sizes, and run different commands.
-
-**Node Scout puts this information in one place.**
-
 ## Demo
 
-![Node Scout system information output](sample/system.png)
-![Node Scout file analysis output](sample/file.png)
-![Node Scout folder analysis output](sample/folder.png)
-![Node Scout project analysis output](sample/project.png)
+![System info](./sample/system.png)
+![File analysis](./sample/file.png)
+![Folder analysis](./sample/folder.png)
+![Project analysis](./sample/project.png)
 
 ## Features
 
-### 📄 Files
+**📄 Files** — type, language, size, lines, words, characters, created date.
 
-Analyze any file and see:
+**📁 Folders** — file count, folder count, total size, contents.
 
-- File type & language
-- File size
-- Lines, words & characters
-- Creation date
-- More useful details
+**🗂️ Projects** — structure, languages, file stats, total size.
 
-### 📁 Folders
+**💻 System** — useful info about your machine.
 
-Analyze any folder and see:
-
-- File count
-- Folder count
-- Total size
-- Contents
-- More useful details
-
-### 🗂️ Projects
-
-Analyze a whole project and see:
-
-- Project structure
-- Languages used
-- File statistics
-- Total size
-- More useful details
-
-### 💻 System
-
-Node Scout can also show useful information about your system.
-
-## Installation
+## Install
 
 Requires Node.js 16+.
 
 ```bash
 npm install -g node-scout
+```
+
+Or run without installing:
+
+```bash
+npx node-scout --help
+```
+
+## Usage
+
+```bash
+scout <target> <path>
+```
+
+| Target    | Description               |
+|-----------|---------------------------|
+| `file`    | Analyze a single file     |
+| `folder`  | Analyze a folder          |
+| `project` | Analyze an entire project |
+| `system`  | Show system information   |
+
+Other commands: `scout help`, `scout version`.
+
+## Examples
+
+```bash
+scout project ./my-project
+scout folder ./src
+scout file package.json
+scout system
+```
+
+Example output for `scout project ./my-project`:
+
+```text
+Project: my-project
+Files: 128
+Folders: 24
+Languages: JavaScript, TypeScript, JSON, Markdown
+Total size: 4.8 MB
+```
+
+## Contributing
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/soroushosouli/node-scout/pulls)
+
+Found a bug or have an idea? Contributions are welcome.
+
+1. Fork the repo
+2. Create a branch
+3. Commit your changes
+4. Open a pull request
+
+## License
+
+MIT
