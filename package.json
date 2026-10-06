@@ -1,11 +1,19 @@
 {
   "name": "node-scout",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "engines": {
     "node": ">=16"
   },
   "description": "A fast CLI for exploring and analyzing systems, files, and projects.",
   "type": "module",
+  "homepage": "https://github.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com"
+  },
+  "bugs": {
+    "url": "https://github.com"
+  },
   "bin": {
     "scout": "src/cli.js"
   },
