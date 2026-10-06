@@ -6,13 +6,13 @@
   },
   "description": "A fast CLI for exploring and analyzing systems, files, and projects.",
   "type": "module",
-  "homepage": "https://github.com",
+  "homepage": "https://github.com/soroushosouli/node-scout",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com"
+    "url": "git+https://github.com/soroushosouli/node-scout.git"
   },
   "bugs": {
-    "url": "https://github.com"
+    "url": "https://github.com/soroushosouli/node-scout/issues"
   },
   "bin": {
     "scout": "src/cli.js"
