@@ -70,7 +70,12 @@ const LANGUAGES = {
     ".md": "Markdown",
     ".tex": "LaTeX",
     ".vue": "Vue",
-    ".svelte": "Svelte"
+    ".svelte": "Svelte",
+    ".webp" : "Image",
+    ".jpg" : "Image",
+    ".png" : "Image",
+    ".svg" : "Image",
+    ".gif" : "GIF"
 };
 
 export function detect(extension) {
