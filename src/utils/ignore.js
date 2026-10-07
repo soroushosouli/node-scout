@@ -63,3 +63,12 @@ export function reset() {
 
     scout(resetMsg);
 }
+
+export function list() {
+    const listMsg = [
+        `${color.bold}${color.cyan}SCOUT${color.reset}  ${color.dim}Ignore List${color.reset}`,
+        `${IGNORE.join(" ")}`,
+    ];
+
+    scout(listMsg);
+}
