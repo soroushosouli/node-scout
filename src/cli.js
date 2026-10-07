@@ -7,6 +7,7 @@ import { scout } from "./utils/scout.js"
 import { scanFile } from "./targets/file.js"
 import { scanFolder } from "./targets/folder.js"
 import { scanProject } from "./targets/project.js"
+import { add, remove, reset, list } from "./utils/ignore.js"
 
 const args = process.argv.slice(2);
 
@@ -43,5 +44,34 @@ switch (args[0]){
 
     case "project":
         scanProject(args[1])
-        break;           
+        break;
+    
+    case "ignore":
+    if (!args[1]) {
+        list();
+        break;
+    }
+
+    switch (args[1]) {
+        case "add":
+            add(...args.slice(2));
+            break;
+
+        case "remove":
+            remove(...args.slice(2));
+            break;
+
+        case "reset":
+            reset();
+            break;
+
+        case "list":
+            list();
+            break;
+
+        default:
+            console.error("Unknown ignore command");
+    }
+
+    break;
 }
