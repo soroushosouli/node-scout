@@ -10,6 +10,11 @@ export let IGNORE = [
 ];
 
 export function add(...args) {
+    if (!args.length) {
+        console.error("No items provided to add.");
+        return;
+    }
+
     let number = 0;
 
     for (const arg of args) {
@@ -28,6 +33,11 @@ export function add(...args) {
 }
 
 export function remove(...args) {
+    if (!args.length) {
+        console.error("No items provided to remove.");
+        return;
+    }
+
     let number = 0;
 
     for (const arg of args) {
@@ -67,7 +77,7 @@ export function reset() {
 export function list() {
     const listMsg = [
         `${color.bold}${color.cyan}SCOUT${color.reset}  ${color.dim}Ignore List${color.reset}`,
-        `${IGNORE.join(" ")}`,
+        ...IGNORE.map(item => `  ${item}`),
     ];
 
     scout(listMsg);
