@@ -25,6 +25,8 @@ Node Scout helps you inspect any codebase in seconds. One command gives you file
 ![File analysis](./sample/file.png)
 ![Folder analysis](./sample/folder.png)
 ![Project analysis](./sample/project.png)
+![Folder tree](./sample/tree.png)
+
 
 ## Features
 
@@ -35,6 +37,8 @@ Node Scout helps you inspect any codebase in seconds. One command gives you file
 **🗂️ Projects** — structure, languages, file stats, total size.
 
 **📋 Custom Ignore List** — Add files/folders to the list you don't want to be scanned in project scanning.
+
+**🌳 Folder Tree** — Folder tree visualizer.
 
 **💻 System** — useful info about your machine.
 
@@ -64,7 +68,7 @@ scout <target> <path>
 | `folder`  | Analyze a folder          |
 | `project` | Analyze an entire project |
 | `system`  | Show system information   |
-| `ignore`  | Show the ignore list      |
+| `tree`    | Show folder tree          |
 
 
 Other commands: `scout help`, `scout version`, `scout ignore add/remove`.
@@ -75,6 +79,7 @@ Other commands: `scout help`, `scout version`, `scout ignore add/remove`.
 scout project ./my-project
 scout folder ./src
 scout file package.json
+scout tree ./myproject
 scout system
 scout ignore add assets
 ```
