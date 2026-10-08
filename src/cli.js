@@ -7,6 +7,7 @@ import { scout } from "./utils/scout.js";
 import { scanFile } from "./targets/file.js";
 import { scanFolder } from "./targets/folder.js";
 import { scanProject } from "./targets/project.js";
+import { scanTree } from "./commands/tree.js";
 import {
     add,
     remove,
@@ -46,6 +47,10 @@ switch (args[0]) {
     case "project":
         scanProject(args[1]);
         break;
+
+    case "tree":
+        scanTree(args[1]);
+        break;        
 
     case "ignore":
         if (!args[1]) {
