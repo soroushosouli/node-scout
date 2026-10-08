@@ -9,6 +9,7 @@ export const help = [
     `  ${color.green}help${color.reset}       Show this help message`,
     `  ${color.green}version${color.reset}    Show Scout version`,
     `  ${color.green}ignore${color.reset}    Shows Ignore list`,
+    `  ${color.green}tree${color.reset}    Shows folder tree`,
     "",
 
     `${color.yellow}TARGETS${color.reset}`,
